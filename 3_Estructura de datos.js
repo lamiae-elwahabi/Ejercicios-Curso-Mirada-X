@@ -21,3 +21,20 @@ for(var i=0; i<cartas.length; i= i+1){
 		encontrado = true;
 	}
 }
+/*Ejempo 5: inserción de valores en un array*/
+var cartas = ["5d", "3t", "2c", "12c"];
+var resultado = [];
+for(var i=0; i<cartas.length; i=i+1){
+	resultado[resultado.length] = cartas[i];
+	if(cartas[i] === "3t"){
+		resultado[resultado.length] = "1c";
+	}
+}
+/*Ejemplo 6 : filtrado de un array*/
+var cartas = ["5d", "3t", "2c", "12c"];
+var resultado =[];
+for(var i=0; i<cartas.length; i=i+1){
+	if(cartas[i][1] === "d" || cartas[i][1] === "c"){
+		resultado[resultado.length] = cartas[i];
+	}
+}
